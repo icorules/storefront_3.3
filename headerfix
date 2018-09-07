@@ -1,0 +1,76 @@
+/* Storefront fix. negative em may need to be tweaked later /*
+
+/* These five classes set up the classes to adjust the title bar that appears on the front page. Add this to row settings/styles under Cell Class*/
+.bdrone  li {
+	height: 450px !important;
+}
+
+.bdrtwo .sow-slider-image-container {
+	height: 100%;
+}
+
+.bdrthree .sow-slider-image-wrapper {
+	height: auto !important;
+	padding: .5rem .5rem .5rem .75rem !important;
+	position: absolute;
+	bottom: 0;
+	max-width: none !important;
+	width: 100%;
+	text-align: center;
+	background-color: hsla(0, 0%, 0%, .6);
+}
+
+.bdrfour .sow-slider-image-wrapper h1 {
+	margin-bottom: 0 !important;
+	font-size: 2em !important;
+}
+
+.bdrfive  .sow-slider-image-wrapper h2 {
+	margin-bottom: 0 !important;
+	font-size: 1.5em !important;
+}
+
+/*This fixes the nav bar and makes it full width
+*/
+div.col-full 
+{
+max-width: none;
+}
+
+/*This fixes some of the padding between within the header ie logo, header and overall padding
+*/
+.site-header .site-branding
+{
+    padding-right: 1em;
+	  padding-left: 1em;
+	padding-bottom: 0em;
+
+}
+
+/*This fixes some of the padding between within the header ie logo, header and overall padding
+*/
+@media (max-width: 960px) {
+  .storefront-primary-navigation {
+    margin-top: -4.5em;
+  }
+}
+/*This changes the dropdown arrow color to white and gives them a bit more space.
+*/
+.handheld-navigation button.dropdown-toggle
+{
+	color:#ffffff;
+	position:absolute;
+}
+/*This fixes the handheld menu, so things page titles don't get cut off.
+*/
+nav#site-navigation.main-navigation.toggled
+{
+display:inline;
+}
+
+/*This adjusts some of the logo padding
+*/
+@media only screen and (max-width: 960px) {
+	.logo { padding-bottom: .6em;
+	}
+}
